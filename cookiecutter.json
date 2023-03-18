@@ -10,6 +10,8 @@
     "build": "1",
     "document_types": {},
     "python_version": "3.X.0",
+    "sparkle_feed_url": "",
+    "sparkle_public_key": "",
     "_extensions": [
         "briefcase.integrations.cookiecutter.PythonVersionExtension"
     ]

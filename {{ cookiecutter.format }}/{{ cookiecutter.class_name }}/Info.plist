@@ -28,6 +28,10 @@
 	<string>Main</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+	{% if cookiecutter.sparkle_feed_url %}<key>SUFeedURL</key>
+	<string>{{ cookiecutter.sparkle_feed_url }}</string>
+	<key>SUPublicEDKey</key>
+	<string>{{ cookiecutter.sparkle_public_key }}</string>{% endif %}
 	<key>MainModule</key>
 	<string>{{ cookiecutter.module_name }}</string>
 	{% if cookiecutter.document_types %}
