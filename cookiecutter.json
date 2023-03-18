@@ -15,6 +15,8 @@
     "console_app": false,
     "universal_build": true,
     "host_arch": "arm64",
+    "sparkle_feed_url": "",
+    "sparkle_public_key": "",
     "_extensions": [
         "briefcase.integrations.cookiecutter.PythonVersionExtension",
         "briefcase.integrations.cookiecutter.PListExtension"
