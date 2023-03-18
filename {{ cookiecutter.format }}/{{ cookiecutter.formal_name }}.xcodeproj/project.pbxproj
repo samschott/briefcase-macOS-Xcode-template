@@ -375,7 +375,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = {{ cookiecutter.min_os_version }};
-				PRODUCT_BUNDLE_IDENTIFIER = "{{ cookiecutter.bundle }}.{{ cookiecutter.app_name }}";
+				PRODUCT_BUNDLE_IDENTIFIER = "{{ cookiecutter.bundle }}";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
@@ -408,7 +408,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = {{ cookiecutter.min_os_version }};
-				PRODUCT_BUNDLE_IDENTIFIER = "{{ cookiecutter.bundle }}.{{ cookiecutter.app_name }}";
+				PRODUCT_BUNDLE_IDENTIFIER = "{{ cookiecutter.bundle }}";
 			};
 			name = Release;
 		};
