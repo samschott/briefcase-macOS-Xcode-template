@@ -11,7 +11,7 @@
 	<key>CFBundleIconName</key>
 	<string>{{ cookiecutter.formal_name }}</string>
 	<key>CFBundleIdentifier</key>
-	<string>{{ cookiecutter.bundle }}.{{ cookiecutter.app_name }}</string>
+	<string>{{ cookiecutter.bundle }}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -55,7 +55,7 @@
 			<string>Viewer</string>
 			<key>LSItemContentTypes</key>
 			<array>
-				<string>{{ cookiecutter.bundle }}.{{ cookiecutter.app_name }}.{{ extension }}</string>
+				<string>{{ cookiecutter.bundle }}.{{ extension }}</string>
 			</array>
 			<key>LSTypeIsPackage</key>
 			<integer>1</integer>
@@ -67,7 +67,7 @@
 		{% for doctype_id, doctype in cookiecutter.document_types.items() %}
 		<dict>
 			<key>UTTypeIdentifier</key>
-			<string>{{ cookiecutter.bundle }}.{{ cookiecutter.app_name }}.{{ doctype_id }}</string>
+			<string>{{ cookiecutter.bundle }}.{{ doctype_id }}</string>
 			<key>UTTypeReferenceURL</key>
 			<string>{{ doctype.url }}</string>
 			<key>UTTypeIconFile</key>
