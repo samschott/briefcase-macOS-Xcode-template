@@ -72,6 +72,8 @@ int main(int argc, char *argv[]) {
         preconfig.utf8_mode = 1;
         // Ensure the locale is set (isolated interpreters won't by default)
         preconfig.configure_locale = 1;
+        // Use malloc instead of pymalloc to free memory more proactively.
+        preconfig.allocator = PYMEM_ALLOCATOR_MALLOC;
         // Don't buffer stdio. We want output to appears in the log immediately
         config.buffered_stdio = 0;
         // Don't write bytecode; we can't modify the app bundle
