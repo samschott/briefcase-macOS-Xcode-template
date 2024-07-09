@@ -458,8 +458,8 @@ void setup_stdout(NSBundle *mainBundle) {
                                 ofType:@"py"] cStringUsingEncoding:NSUTF8StringEncoding];
 
     if (nslog_script == NULL) {
-        info_log(@"No Python NSLog handler found. stdout/stderr will not be captured.");
-        info_log(@"To capture stdout/stderr, add 'std-nslog' to your app dependencies.");
+        debug_log(@"No Python NSLog handler found. stdout/stderr will not be captured.");
+        debug_log(@"To capture stdout/stderr, add 'std-nslog' to your app dependencies.");
     } else {
         debug_log(@"Installing Python NSLog handler...");
         FILE *fd = fopen(nslog_script, "r");
